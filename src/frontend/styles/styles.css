@@ -5,20 +5,193 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.conteiner {
-  max-width: 1400px;
+.container {
+  max-width: 1480px;
   margin: 0 auto;
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  padding: 3rem;
-  background-color: #2573bb;
+  background-color: #403C3B;
+}
+
+.header__head .logo {
+  display: inline-block;
+  width: 20%;
+  padding: 0 5rem;
+}
+
+.header__head .logo__title {
+  color: #CFCFCF;
+  font-size: 20px;
+}
+
+.header__head .search {
+  display: inline-block;
+  width: 40%;
+  padding: 1.5rem;
+}
+
+.header__head .search:after {
+  content: url(../img/Search.svg);
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 2.8rem;
+  right: 47rem;
+}
+
+.header__head .search:before {
+  content: url(../img/Location.svg);
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 2.8rem;
+  left: 28.5rem;
+  z-index: 5;
+}
+
+.header__head .search input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.header__head .search input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.header__head .search input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.header__head .search input::placeholder {
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.header__head .search__input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 4rem;
+  border: 2px solid #403C3B;
+  border-radius: 10px;
+  color: #CFCFCF;
+  background-color: #504B4A;
+  outline: none;
+}
+
+.header__head .contacts {
+  display: inline-block;
+  width: 20%;
+}
+
+.header__head .contacts__image {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  float: left;
+  background-color: #618967;
+  border-radius: 50%;
+}
+
+.header__head .contacts__image img {
+  -webkit-transform: translate(94%, 105%);
+          transform: translate(94%, 105%);
+}
+
+.header__head .contacts__title {
+  color: #CFCFCF;
+}
+
+.header__head .contacts__phone a {
+  color: #CFCFCF;
+}
+
+.header__head .basket {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(114.93deg, #618967 5.11%, #618967 94%);
+  border-radius: 10px;
+}
+
+.header__head .basket__title {
+  display: inline-block;
+  color: #CFCFCF;
+}
+
+.header__head .basket__count {
+  display: inline-block;
+  color: #CFCFCF;
+}
+
+.header__banner.banner {
+  padding: 10rem;
+  background-image: url("../img/Group.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__banner .banner__title {
+  max-width: 48rem;
+  color: #CFCFCF;
+  font-size: 60px;
+  font-weight: 900;
+  -webkit-transform: rotate(-8.37deg);
+          transform: rotate(-8.37deg);
+}
+
+.header__banner .banner__description {
+  max-width: 25rem;
+  margin-left: 7rem;
+  padding: .5rem;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  color: #CFCFCF;
+  -webkit-transform: rotate(-8.37deg);
+          transform: rotate(-8.37deg);
+  background: linear-gradient(114.93deg, #618967 11%, #618967 94%);
+}
+
+.header__navigation .navigation {
+  background-color: #403C3B;
+}
+
+.header__navigation .navigation__lists {
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.header__navigation .navigation__list {
+  display: inline-block;
+  padding: 25px;
+}
+
+.header__navigation .navigation__link {
+  text-decoration: none;
+  color: #CFCFCF;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header__navigation .navigation__link:hover {
+  font-weight: 500;
+  outline: 5px;
+}
+
+.header hr {
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */
