@@ -2,9 +2,6 @@
     width: 100%;
     height: auto;
 
-    position: absolute;
-    top: auto;
-
     background-color: $color-gray;
 
     &__head {
@@ -155,6 +152,7 @@
                 border: none;
                 padding: 10px;
                 text-align: center;
+
             }
 
             &__list {
@@ -175,14 +173,15 @@
 
             &__link:hover {
                 font-weight: 500;
-                
-                border-bottom: 5px solid $color-green(30%);
+  
                 outline: 5px;
             }
 
         }
     }
-
+    hr {
+        margin: 0;
+    }
 }
 
 

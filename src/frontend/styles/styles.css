@@ -17,8 +17,6 @@ body {
 .header {
   width: 100%;
   height: auto;
-  position: absolute;
-  top: auto;
   background-color: #403C3B;
 }
 
@@ -169,7 +167,7 @@ body {
 }
 
 .header__navigation .navigation__lists {
-  border-bottom: 2px solid #618967;
+  border: none;
   padding: 10px;
   text-align: center;
 }
@@ -190,7 +188,10 @@ body {
 
 .header__navigation .navigation__link:hover {
   font-weight: 500;
-  border-bottom: 5px solid #618967 30%;
   outline: 5px;
+}
+
+.header hr {
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */
